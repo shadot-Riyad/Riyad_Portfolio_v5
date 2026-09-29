@@ -8,8 +8,7 @@
 - images/ : ছবি (favicon.png/.ico = ব্রাউজার ট্যাবের লোগো)
 - google-sheet-setup.md : Suggestion → Google Sheet সেটআপ
 
-## Run
-index.html double click করলে browser এ খুলবে।
+
 
 ## Online (free)
 GitHub repo → সব ফাইল upload → Settings > Pages > Branch main > Save.
