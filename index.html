@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Riyad | SQA Engineer Portfolio</title>
+
+<!-- ✅ পরিবর্তন করতে পারো: SEO description (Google search এ এটা দেখায়) -->
+<meta name="description" content="Riyad — SQA Engineer. Manual & automation testing, API testing, QA projects and demos.">
+<meta name="theme-color" content="#2e8b57">
+<meta property="og:title" content="Riyad | SQA Engineer Portfolio">
+<meta property="og:description" content="Find Bugs Before Users Do. QA projects, test artifacts and demos.">
+<meta property="og:image" content="images/riyad.png">
+
+<!-- 🖼️ ব্রাউজার ট্যাবের লোগো (favicon)। ছবি বদলাতে চাইলে images/favicon.png ও favicon.ico replace করো -->
+<link rel="icon" type="image/png" href="images/favicon1.png">
+<link rel="shortcut icon" href="images/favicon.ico">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="prog"></div>
+<div class="blob b1"></div><div class="blob b2"></div>
+
+<!-- ================= NAVBAR ================= -->
+<nav>
+  <!-- ✅ <Riyad/> লোগোতে ক্লিক করলে Home পেজে যাবে (নাম js/data.js থেকে আসে) -->
+  <a class="logo" id="logo" href="#home" aria-label="Go to home"></a>
+  <div class="links" id="links">
+    <a href="#home">Home</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#certificates">Certificates</a><a href="#about">About</a><a href="#contact">Contact</a>
+  </div>
+  <div style="display:flex;gap:8px">
+    <button class="ic" id="pbtn" title="Site color" aria-label="Site color">🎨</button>
+    <button class="ic" id="theme" title="Theme" aria-label="Toggle theme">🌙</button>
+    <button class="ic" id="burger" aria-label="Menu">☰</button>
+  </div>
+  <div class="pal" id="pal">
+    <button data-c="sea" style="--a:#2e8b57;--b:#1fc8a0" title="Sea Green"></button>
+    <button data-c="blue" style="--a:#2563eb;--b:#22d3ee" title="Ocean"></button>
+    <button data-c="purple" style="--a:#7c3aed;--b:#ec4899" title="Purple"></button>
+    <button data-c="sunset" style="--a:#ea580c;--b:#f5b400" title="Sunset"></button>
+    <button data-c="rose" style="--a:#e11d48;--b:#fb7185" title="Rose"></button>
+    <input type="color" id="cc" value="#2e8b57" title="Custom color">
+  </div>
+</nav>
+
+<noscript><p style="padding:20px;text-align:center">Please enable JavaScript to view this portfolio.</p></noscript>
+
+<!-- ================= HOME ================= -->
+<section class="page" id="home">
+  <div class="hero">
+    <div>
+      <p class="mut">Hello, I'm</p>
+      <h1><span class="g" id="hname"></span></h1>
+      <h2 style="margin-top:8px"><span id="typed" class="cur"></span></h2>
+      <p class="mut" id="tag" style="margin-top:12px"></p>
+      <div class="row">
+        <a class="btn" href="#projects">View Projects</a>
+        <button class="btn o" id="cvBtn">Request CV</button>
+      </div>
+      <div class="soc" id="soc1"></div>
+    </div>
+    <div class="ph"><div class="pic" id="pic"></div></div>
+  </div>
+  <div class="quote qc" id="dq"><span id="dqt"></span><small id="dqa"></small><button class="ic" id="nq" title="Another quote" aria-label="Another quote">🔄</button></div>
+  <div class="grid" id="stats"></div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section class="page" id="projects">
+  <div class="ph2"><h2 class="g">QA Projects</h2>
+  <p class="mut">A few things I’ve tested, automated, and built.<br><b>Explore my work →</b></p></div>
+  <div class="grid" id="plist"></div>
+
+  <div class="ph2" style="margin-top:44px"><h2 class="g">Demo Projects</h2><p class="mut">Inspired by ideas, built with code.</p></div>
+
+  <!-- 📝 ছোট নোট + নিজের লেখা quote (টেক্সট বদলাতে চাইলে এখানেই edit করো) -->
+  <div class="pnote">
+    <p>📝 <b>Note:</b> I took help and inspiration from online sources while building these demos — but every project here was put together with my own hands, time and effort.</p>
+    <small>“Inspiration is borrowed, but the effort is always mine.”</small>
+  </div>
+
+  <div class="grid" id="dlist"></div>
+</section>
+
+<!-- ================= EXPERIENCE ================= -->
+<section class="page" id="experience">
+  <h2 class="g">Experience</h2><div class="tl" id="exp"></div>
+  <h2 class="g" style="margin-top:34px">Training &amp; Courses</h2><div class="tl" id="course"></div>
+  <h2 class="g" style="margin-top:34px">Education</h2><div class="tl" id="edu"></div>
+</section>
+
+<!-- ================= CERTIFICATES ================= -->
+<section class="page" id="certificates">
+  <div class="ph2"><h2 class="g">Certificates</h2><p class="mut">Learning never stops! My certificate gallery, SQA training milestones, and course achievements are currently under maintenance and getting a fresh update. <br> Stay tuned, they'll be live soon!</p></div>
+  <div class="grid" id="certs"></div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="page" id="about">
+  <div class="ph2"><h2 class="g">About Me</h2><p class="mut" id="bio"></p></div>
+  <div id="story"></div>
+  <!-- ✅ "What next" এর নিচে To-Do List (কাজ js/data.js এর todo থেকে আসে) -->
+  <div id="todo"></div>
+  <div class="quote qc" id="quote"><span id="aqt"></span><small id="aqa"></small></div>
+  <h2 style="margin-top:40px">Skills</h2>
+  <div class="grid" id="skills"></div>
+
+  <!-- Riyad এর আগের original লাইন (backup):
+       Confidence level: Bug lukate parbe na, ami dhorboi! 😉 -->
+  <div class="conf-wrap"><div class="conf"><span class="shine"></span>Confidence level: Bug lukate parbe na, ami dhorboi! 😉</div></div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="page" id="contact">
+  <div class="ph2">
+    <h2 class="g">Let’s Talk.</h2>
+    <p class="mut">Have a project, a testing challenge, or just want to say hello? I’m always open to discussing QA, automation, software, or interesting ideas.<br>
+    <b>📧 Let’s connect → drop me a message.</b></p>
+  </div>
+
+  <!-- 📇 Contact info card (Address / Phone / Email / ছবি) — js/data.js এর contact থেকে আসে -->
+  <div id="cinfo"></div>
+
+  <div class="cgrid">
+
+    <!-- ✉️ Message form → Formspree এ যায় (URL: js/data.js এর D.formspree) -->
+    <div class="card cbox">
+      <div class="chead"><span class="cico">✉️</span><div><h3>Send a message</h3><small class="mut">I usually reply within a day</small></div></div>
+      <form id="cf" class="cform">
+        <div class="fld"><input name="name" id="cn" placeholder=" " required autocomplete="name"><label for="cn">Your name</label></div>
+        <div class="fld"><input name="email" id="ce" type="email" placeholder=" " required autocomplete="email"><label for="ce">Your email</label></div>
+        <div class="fld"><textarea name="message" id="cm" rows="5" placeholder=" " required></textarea><label for="cm">Your message</label></div>
+        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true"><!-- 🚫 spam trap, মুছো না -->
+        <button class="btn send" type="submit"><span class="bt">Send message</span><svg viewBox="0 0 24 24" class="plane" aria-hidden="true"><path d="M21 3L3 10.5l7 2.5 2.5 7z"/><path d="M10 13L21 3"/></svg></button>
+      </form>
+      <div class="done" id="cdone" hidden>
+        <div class="tick"><svg viewBox="0 0 52 52"><circle cx="26" cy="26" r="23"/><path d="M15 27l8 8 15-17"/></svg></div>
+        <h3>Message sent!</h3><p class="mut">Thanks for reaching out — I’ll get back to you soon.</p>
+        <button class="btn o" type="button" data-again="cf">Send another</button>
+      </div>
+    </div>
+
+    <!-- 💡 Suggestion form → Google Sheet এ যায় (URL: js/data.js এর D.sheetUrl) -->
+    <div class="card cbox sug">
+      <div class="chead"><span class="cico">💡</span><div><h3>Suggestion box</h3><small class="mut">Help me make this portfolio better</small></div></div>
+      <form id="sf" class="cform">
+        <label class="lab">What is it about?</label>
+        <div class="chips" id="chips">
+          <label><input type="radio" name="type" value="Portfolio design" checked><span>🎨 Design</span></label>
+          <label><input type="radio" name="type" value="Project idea"><span>🚀 Project idea</span></label>
+          <label><input type="radio" name="type" value="Bug / Issue"><span>🐞 Bug</span></label>
+          <label><input type="radio" name="type" value="Other"><span>✨ Other</span></label>
+        </div>
+        <label class="lab">How do you like the site?</label>
+        <div class="stars" id="stars">
+          <input type="radio" name="rating" id="s5" value="5"><label for="s5" title="Love it">★</label>
+          <input type="radio" name="rating" id="s4" value="4"><label for="s4" title="Great">★</label>
+          <input type="radio" name="rating" id="s3" value="3"><label for="s3" title="Good">★</label>
+          <input type="radio" name="rating" id="s2" value="2"><label for="s2" title="Okay">★</label>
+          <input type="radio" name="rating" id="s1" value="1"><label for="s1" title="Needs work">★</label>
+        </div>
+        <div class="fld"><textarea name="suggestion" id="sm" rows="4" maxlength="500" placeholder=" " required></textarea><label for="sm">Your suggestion</label><small class="cnt" id="cnt">0/500</small></div>
+        <div class="fld"><input name="email" id="se" type="email" placeholder=" " autocomplete="email"><label for="se">Email (optional)</label></div>
+        <button class="btn send" type="submit"><span class="bt">Submit suggestion</span><svg viewBox="0 0 24 24" class="plane" aria-hidden="true"><path d="M21 3L3 10.5l7 2.5 2.5 7z"/><path d="M10 13L21 3"/></svg></button>
+      </form>
+      <div class="done" id="sdone" hidden>
+        <div class="tick"><svg viewBox="0 0 52 52"><circle cx="26" cy="26" r="23"/><path d="M15 27l8 8 15-17"/></svg></div>
+        <h3>Thank you! 💚</h3><p class="mut">Your suggestion has been received.</p>
+        <button class="btn o" type="button" data-again="sf">Add another</button>
+      </div>
+    </div>
+
+  </div>
+  <div class="soc" id="soc2"></div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="fg">
+    <!-- ✅ Footer এর <Riyad/> লোগোতেও ক্লিক করলে Home এ যাবে -->
+    <div><a class="logo" id="flogo" href="#home" aria-label="Go to home"></a><p class="mut" id="ftag" style="margin-top:8px"></p><div class="soc ic-only" id="soc3"></div></div>
+    <div><h4>Pages</h4><a href="#home">Home</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#certificates">Certificates</a><a href="#about">About</a><a href="#contact">Contact</a></div>
+    <div><h4>Get in touch</h4><a id="fmail"></a><a href="#contact">Send a message</a><a href="#contact">Give a suggestion</a></div>
+  </div>
+  <div class="fb mut" id="foot"></div>
+</footer>
+
+<!-- ================= MODALS ================= -->
+<div class="modal" id="pm"><div class="box" id="pb"></div></div>
+<div class="modal" id="cvm"><div class="box">
+  <h3>Request my CV</h3><p class="mut">Details din, ami email e CV pathiye dibo.</p><br>
+  <form id="cvf">
+    <label>Name</label><input name="name" required>
+    <label>Email</label><input name="email" type="email" required>
+    <label>Company / Purpose</label><input name="company">
+    <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true">
+    <div class="row" style="margin-top:0"><button class="btn">Send Request</button><button type="button" class="btn o" data-close>Cancel</button></div>
+  </form>
+</div></div>
+<div class="toast" id="toast"></div>
+
+<!-- 🚫 এই দুই লাইনে হাত দিও না -->
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
